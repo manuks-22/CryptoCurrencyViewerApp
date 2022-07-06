@@ -3,7 +3,7 @@ using System;
 
 namespace CryptoCurrencyApp.Model.Model
 {
-    public class ExchangeRateModel : IModel, IEquatable<ExchangeRateModel>
+    public sealed class ExchangeRateModel : IModel, IEquatable<ExchangeRateModel>
     {
         /// <summary>
         /// Gets or sets the Result property.

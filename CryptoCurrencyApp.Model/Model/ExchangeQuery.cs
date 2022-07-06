@@ -3,7 +3,7 @@ using System;
 
 namespace CryptoCurrencyApp.Model.Model
 {
-    public class ExchangeQuery : IModel, IEquatable<ExchangeQuery>
+    public sealed class ExchangeQuery : IModel, IEquatable<ExchangeQuery>
     {
         /// <summary>
         /// Gets or sets the Amount property.

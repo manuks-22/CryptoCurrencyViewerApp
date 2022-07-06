@@ -5,10 +5,10 @@ namespace CryptoCurrencyApp.Infrastructure.Dto
 {
     public class CrytoCurrencyRateDto
     {
-        private string _cryptoCurrencyId;
-        private string _cryptoCurrencySymbol;
-        private string _cryptoCurrencyName;
-        private List<ExchangeRateDto> _exchangeRates;
+        private readonly string _cryptoCurrencyId;
+        private readonly string _cryptoCurrencySymbol;
+        private readonly string _cryptoCurrencyName;
+        private readonly List<ExchangeRateDto> _exchangeRates;
         private StatusDto _status;
 
         public CrytoCurrencyRateDto(string cryptoCurrencyId, string cryptoCurrencySymbol, string cryptoCurrencyName, IEnumerable<ExchangeRateDto> exchangeRates)

@@ -2,9 +2,9 @@
 {
     public class StatusDto
     {
-        private bool _hasError;
+        private readonly bool _hasError;
 
-        private string _errorMessage;
+        private readonly string _errorMessage;
 
         public StatusDto(bool hasError, string errorMessage)
         {

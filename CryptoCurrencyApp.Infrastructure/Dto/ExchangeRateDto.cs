@@ -3,8 +3,8 @@ namespace CryptoCurrencyApp.Infrastructure.Dto
 {
     public class ExchangeRateDto
     {
-        private string _currencyId;
-        private double _rate;
+        private readonly string _currencyId;
+        private readonly double _rate;
 
         public ExchangeRateDto(string currencyId, double rate)
         {

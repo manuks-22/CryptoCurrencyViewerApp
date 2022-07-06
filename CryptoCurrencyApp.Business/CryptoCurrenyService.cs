@@ -89,11 +89,7 @@ namespace CryptoCurrencyApp.Service
                     throw;
                 }
 
-                foreach (var task in conversionTasks)
-                {
-                    var result = task.Result;
-                    rateDto.ExchangeRates.Add(new ExchangeRateDto(result.Query.ToCurrency, result.Result));
-                }
+                conversionTasks.ForEach(task=> rateDto.ExchangeRates.Add(new ExchangeRateDto(task.Result.Query.ToCurrency, task.Result.Result)));
             }
             return rateDto;
         }

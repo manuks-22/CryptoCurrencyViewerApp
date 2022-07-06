@@ -1,8 +1,0 @@
-*.cache
-*.dll
-*.exe
-*.pdb
-bin
-/bin
-obj
-packages

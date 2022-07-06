@@ -1,6 +1,4 @@
-﻿
-
-using CryptoCurrencyApp.Infrastructure.Dto;
+﻿using CryptoCurrencyApp.Infrastructure.Dto;
 using CryptoCurrencyApp.Infrastructure.Logging;
 using CryptoCurrencyApp.Model.Model;
 using CryptoCurrencyApp.Service.Configuration;

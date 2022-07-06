@@ -53,20 +53,7 @@ namespace CryptoCurrencyApp.Service.Test
             //Act
             _ = cryptoCurrencyDataModel.ConvertToCryptoCurrencyDto();
 
-        }
-
-        [TestMethod]
-        [ExpectedException(typeof(ArgumentNullException))]
-        public void CryptoItemDataModel_With_Null_QuoteList_When_Converted_To_Dto_Throws_Exception()
-        {
-            //Arrange
-            var cryptoCurrencyDataModel = CryptoCurrencyItemModel();
-            cryptoCurrencyDataModel.DataList.First().Value.Quote = null;
-
-            //Act
-            _ = cryptoCurrencyDataModel.ConvertToCryptoCurrencyDto();
-
-        }
+        } 
 
         private CoinMarketCapCryptoCurrencyItemData CryptoCurrencyItemModel()
         {

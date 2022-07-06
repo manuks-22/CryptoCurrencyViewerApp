@@ -3,5 +3,6 @@
 *.exe
 *.pdb
 bin
+/bin
 obj
 packages

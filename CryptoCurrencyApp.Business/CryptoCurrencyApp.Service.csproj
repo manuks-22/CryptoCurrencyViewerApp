@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>CryptoCurrencyApp.Service</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CryptoCurrencyApp.Infrastructure\CryptoCurrencyApp.Infrastructure.csproj" />
+    <ProjectReference Include="..\CryptoCurrencyApp.Model\CryptoCurrencyApp.Model.csproj" />
+  </ItemGroup>
+
+</Project>

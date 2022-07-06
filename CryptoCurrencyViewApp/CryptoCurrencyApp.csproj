@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>CryptoCurrencyApp</AssemblyName>
+    <RootNamespace>CryptoCurrencyApp</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CryptoCurrencyApp.Business\CryptoCurrencyApp.Service.csproj" />
+    <ProjectReference Include="..\CryptoCurrencyApp.Infrastructure\CryptoCurrencyApp.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

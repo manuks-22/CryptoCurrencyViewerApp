@@ -49,13 +49,14 @@ Provided there is more time available, I would like to spend time on the followi
 ```
 
 3. I have not debugged performance issue in production environment. But rather have worked with identifying performance issues in desktop based applications using Visual studio performance tools.
+To debug an issue in production, one of the APM tools like Dynatrace will be required to monitor. I have worked with Splunk for a short while for a Java back end on Webshpere server. The primary requriement was to debug issues and identfiy API call timings to support WPF front end development.  
 
-4. One of the recent books that I read which turned out interesting was  ***CLR via C# by Jeffery Richter***. It provides an indepth visualization of how C# works internally.
+5. One of the recent books that I read which turned out interesting was  ***CLR via C# by Jeffery Richter***. It provides an indepth visualization of how C# works internally.
 Morover, I follow Udemy courses. Currently pursuing the course ***Ultimate AWS Certified Developer Associate 2022***.
 
-5. The technical assesment was very interesting. The statement is one, that can be easily related by a developer. It was good to work on a real life scenario rather than, solving hypothetical scenarios and algorithms like that of many other interview processes. The options to choose the technology and architecture was thought provoking.
+6. The technical assesment was very interesting. The statement is one, that can be easily related by a developer. It was good to work on a real life scenario rather than, solving hypothetical scenarios and algorithms like that of many other interview processes. The options to choose the technology and architecture was thought provoking.
 
-6. About me.
+7. About me.
 ```json
 {
   "name": "Manu",

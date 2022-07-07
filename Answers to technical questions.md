@@ -72,7 +72,15 @@ Morover, I follow Udemy courses. Currently pursuing the course ***Ultimate AWS C
     "Movies"
   ],
   "aboutmyself": [
-    "I am quick learner and an astute problem solver. I get things done. \nAs a newbie to an AWS migration team without any prior AWS experience, I could quickly pickup Infrasturcture as code using Cloud Formation and became the single point of contact for the infrastructure and the deployment pipeline creation. \nI am also self organised with track record of leading teams on technical and delivery front. \nOn the personal front, I am married and have two energetic young boys, who keep me on my toes during my time off from work. \nThough living a hectic schedule, I still find time to pursue my passion to travel, especially roadtrips. One of the recent trips was a 7000 kilometer road trip to Rajasthan travelling across 7 states in India."
+    "I am quick learner and an astute problem solver. I get things done. 
+	As a newbie to an AWS migration team without any prior AWS experience, 
+	I could quickly pickup Infrasturcture as code using Cloud Formation and 
+	became the single point of contact for the infrastructure and the deployment pipeline creation. 
+	I am also self organised with track record of leading teams on technical and delivery front. 
+	On the personal front, I am married and have two energetic young boys, 
+	who keep me on my toes during my time off from work. 
+	Though living a hectic schedule, I still find time to pursue my passion to travel, especially roadtrips. 
+	One of the recent trips was a 7000 kilometer road trip to Rajasthan travelling across 7 states in India."
   ] 
 }
 ```  

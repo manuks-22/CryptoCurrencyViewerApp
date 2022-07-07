@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace CryptoCurrencyApp.Infrastructure.Dto
 {
-    public class CrytoCurrencyRateDto
+    public record CrytoCurrencyRateDto
     {
         /// <summary>
         /// Get the CryptoCurrencyId property.

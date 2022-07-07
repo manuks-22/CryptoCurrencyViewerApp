@@ -1,7 +1,7 @@
 ﻿
 namespace CryptoCurrencyApp.Infrastructure.Dto
 {
-    public class ExchangeRateDto
+    public record ExchangeRateDto
     {
         /// <summary>
         /// Get the CurrencyId property.
@@ -18,7 +18,6 @@ namespace CryptoCurrencyApp.Infrastructure.Dto
             CurrencyId = currencyId;
             Rate = rate;
         }
-
     }
 
 }

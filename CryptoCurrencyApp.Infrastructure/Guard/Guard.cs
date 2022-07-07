@@ -10,7 +10,7 @@ namespace CryptoCurrencyApp.Infrastructure.Guard
         /// <param name="property">The property to be verified</param>
         /// <param name="propertyName">The name of the property</param>
         public static void AgainstNull(object property, string propertyName)
-        {
+        { 
             if (property == null)
             {
                 throw new ArgumentNullException(@$"The property {propertyName} is null.");

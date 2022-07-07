@@ -1,25 +1,22 @@
 ﻿namespace CryptoCurrencyApp.Infrastructure.Dto
 {
-    public class StatusDto
+    public record StatusDto
     {
-        private readonly bool _hasError;
-
-        private readonly string _errorMessage;
-
-        public StatusDto(bool hasError, string errorMessage)
-        {
-            _hasError = hasError;
-            _errorMessage = errorMessage;
-        }
-
         /// <summary>
         /// Gets whether the dto has error.
         /// </summary>
-        public bool HasError => _hasError;
+        public bool HasError { get; init; }
 
         /// <summary>
         /// Gets the error message.
         /// </summary>
-        public string ErrorMessage => _errorMessage;
+        public string ErrorMessage { get; init; }
+
+        public StatusDto(bool hasError, string errorMessage)
+        {
+            HasError = hasError;
+            ErrorMessage = errorMessage;
+        }
+
     }
 }

@@ -5,53 +5,45 @@ namespace CryptoCurrencyApp.Infrastructure.Dto
 {
     public class CrytoCurrencyRateDto
     {
-        private readonly string _cryptoCurrencyId;
-        private readonly string _cryptoCurrencySymbol;
-        private readonly string _cryptoCurrencyName;
-        private readonly List<ExchangeRateDto> _exchangeRates;
-        private StatusDto _status;
-
-        public CrytoCurrencyRateDto(string cryptoCurrencyId, string cryptoCurrencySymbol, string cryptoCurrencyName, IEnumerable<ExchangeRateDto> exchangeRates)
-        {
-            _cryptoCurrencyId = cryptoCurrencyId;
-            _cryptoCurrencySymbol = cryptoCurrencySymbol;
-            _cryptoCurrencyName = cryptoCurrencyName;
-            if (exchangeRates != null)
-                _exchangeRates = exchangeRates.ToList();
-            SetStatus();
-        }
-
-        private void SetStatus()
-        {
-            var hasError = _cryptoCurrencyId == null;
-            var errorMessage = hasError ? "Invalid currency symbol" : string.Empty;
-            _status = new StatusDto(hasError, errorMessage);
-        }
-
         /// <summary>
         /// Get the CryptoCurrencyId property.
         /// </summary>
-        public string CryptoCurrencyId => _cryptoCurrencyId;
+        public string CryptoCurrencyId { get; init; }
 
         /// <summary>
         /// Get the CryptoCurrencySymbol property.
         /// </summary>
-        public string CryptoCurrencySymbol => _cryptoCurrencySymbol;
+        public string CryptoCurrencySymbol { get; init; }
 
         /// <summary>
         /// Get the CryptoCurrencyName property.
         /// </summary>
-        public string CryptoCurrencyName => _cryptoCurrencyName;
+        public string CryptoCurrencyName { get; init; }
 
         /// <summary>
         /// Get the ExchangeRates property.
         /// </summary>
-        public List<ExchangeRateDto> ExchangeRates => _exchangeRates;
+        public List<ExchangeRateDto> ExchangeRates { get; init; }
 
         /// <summary>
         /// Gets the status
         /// </summary>
-        public StatusDto Status => _status;
+        public StatusDto Status { get; init; }
+
+        public CrytoCurrencyRateDto(string cryptoCurrencyId, string cryptoCurrencySymbol, string cryptoCurrencyName, IEnumerable<ExchangeRateDto> exchangeRates)
+        {
+            CryptoCurrencyId = cryptoCurrencyId;
+            CryptoCurrencySymbol = cryptoCurrencySymbol;
+            CryptoCurrencyName = cryptoCurrencyName;
+            if (exchangeRates != null)
+                ExchangeRates = exchangeRates.ToList();
+
+            var hasError = CryptoCurrencyId == null;
+            var errorMessage = hasError ? "Invalid currency symbol" : string.Empty;
+            Status = new StatusDto(hasError, errorMessage);
+        }
+
+
     }
 
 

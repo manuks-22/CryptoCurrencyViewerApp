@@ -18,7 +18,7 @@ namespace CryptoCurrencyApp.Controllers
         public IActionResult Error()
         {
             var exception = HttpContext.Features.Get<IExceptionHandlerFeature>();
-            _logger.Error(@$"Error in API | {exception.Error.Message}| {exception.Error.Sta}" );
+            _logger.Error(@$"Error in API | {exception.Error.Message}", exception.Error);
             return Problem();
         }
        

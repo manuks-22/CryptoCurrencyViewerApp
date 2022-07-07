@@ -13,8 +13,7 @@ namespace CryptoCurrencyApp.Service
     {
         private readonly ILogManager _logger;
         private readonly IExchangeRateConfiguration _config;
-        private readonly IWebClient _webClient;
-
+        private readonly IWebClient _webClient; 
 
         public ExchangeRateService(ILogManager logger, IExchangeRateConfiguration config, IWebClient webClient)
         {

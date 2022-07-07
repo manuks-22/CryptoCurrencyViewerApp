@@ -6,6 +6,7 @@ The app is a single projet with a .NetCore API with a Razor page.
 1. The app uses 2 API's.
 2. https://exchangeratesapi.io and https://coinmarketcap.com/api (free version)
 3. Ensure that the correct API keys are defined in the Constants.cs file in the Inrfastructure project.
+4. Ensure .Net 5.0 sdk is installed.
 
 ## Running the App
 
